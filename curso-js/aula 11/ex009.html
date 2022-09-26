@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Qual a sua nacionalidade?</h1>
+    <p>
+        Qual o seu país de nascimento? 
+        <select name="país" id="ipais">
+            <option selected value="">---Escolha---</option>
+            <option class="pais" value="Argentina">Argentina</option>
+            <option class="pais" value="Bolívia">Bolívia</option>
+            <option class="pais" value="Brasil">Brasil</option>
+            <option  class="pais"value="Peru">Peru</option>
+            <option class="pais" value="Uruguai">Uruguai</option>
+            <option class="pais" value="Venezuela">Venezuela</option>
+        </select>
+    </p>
+    <p>
+        <input type="submit" value="Enviar" onclick="nacionalidade()">
+    </p>
+    <span id="res">
+
+    </span>
+    <script>
+        var res = document.querySelector('#res')
+        function nacionalidade() {
+            var pais = window.document.querySelector('#ipais').value
+
+            if (pais == 'Argentina') {
+                res.innerHTML = `Você nasceu na ${pais}, portanto você é argentino.`
+            } else if (pais == 'Bolívia') {
+                res.innerHTML = `Você nasceu na ${pais}, portanto você é boliviano.`
+            } else if (pais == 'Brasil') {
+                res.innerHTML = `Você nasceu no ${pais}, portanto você é brasileiro.`
+            } else if (pais == 'Peru')  {
+                res.innerHTML = `Você nasceu no ${pais}, portanto você é peruano.`
+            } else if (pais == 'Uruguai') {
+                res.innerHTML = `Você nasceu no ${pais}, portanto você é uruguaio.`
+            } else if (pais == 'Venezuela') {
+                res.innerHTML = `Você nasceu na ${pais}, portanto você é venezuelano.`
+            } else {
+                res.innerHTML = `Você precisa escolher um país acima`
+            }
+        }
+    </script>
+</body>
+</html>
