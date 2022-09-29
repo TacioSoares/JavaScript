@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do dia</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body id="body">
+    <h1>Hora do Dia</h1>
+    <div id="caixa">
+        <p>Agora são <span id="msg"></span> horas</p>
+        <div id="img">
+            <img id="manhã" src="../exercícios/imagens/fotomanha.png" alt="foto da manhã">
+            <img id="tarde" src="imagens/fototarde.png" alt="foto da tarde">
+            <img id="noite" src="imagens/fotonoite.png" alt="foto da noite">
+        </div>
+    </div>
+    <script>
+        var agora = new Date()
+        var hora = agora.getHours()
+        var manha = window.document.querySelector('#manhã')
+        var tarde = window.document.querySelector('#tarde')
+        var noite = window.document.querySelector('#noite')
+        var msg = window.document.querySelector('#msg')
+        msg.innerHTML = `${hora}`
+        var body = window.document.querySelector('#body')
+        if (hora > 11 && hora < 18) {
+            manha.style.display = 'none'
+            tarde.style.display = 'block'
+            noite.style.display = 'none'
+            document.body.style.background = '#92692c'
+        } else if (hora >= 18 || hora <= 4) {
+            manha.style.display = 'none'
+            tarde.style.display = 'none'
+            noite.style.display = 'block'
+            document.body.style.backgroundcolor = '#36270f'
+        } else {
+            manha.style.display = 'block'
+            tarde.style.display = 'none'
+            noite.style.display = 'none'
+            document.body.style.background = '#ecab49'
+        }
+    </script>
+</body>
+</html>

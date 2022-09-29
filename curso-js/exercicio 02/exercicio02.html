@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verificador de idade</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: lightsteelblue;
+        }
+        h1 {
+            padding: 20px;
+            text-align: center;
+            color: darkblue;
+        }
+        div#caixa {
+            margin: auto;
+            width: 400px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.603);
+        }
+        input#idade {
+            width: 60px;
+        }
+        label {
+            margin-left: 20px;
+        }
+        p {
+            padding: 10px;
+        }
+        p#msg {
+            text-align: center;
+        }
+        input#verificar {
+            width: 70px;
+            padding: 2px;
+            border: 1px solid gray;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        img {
+            display: block;
+            margin: auto;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificador de Idade</h1>
+    <div id="caixa">
+        <p>
+            <strong>Ano de Nascimento</strong>: <input type="number" name="idade" id="idade">
+        </p>
+        <p>
+            <strong>Sexo:</strong> <label for="masc">Masculino</label> <input type="radio" name="sexo" id="masc" checked>
+            <label for="fem">Feminino</label> <input type="radio" name="sexo" id="fem">
+        </p>
+        <p>
+            <input id="verificar" type="submit" value="Verificar" onclick="verificar()">
+        </p>
+        <div id="msg">
+            Preencha os dados acima para verificar o resultado
+        </div>
+        <script src="JS/exercicio02.js"></script>
+    </div>
+</body>
+</html>
