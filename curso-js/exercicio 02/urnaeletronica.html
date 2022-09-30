@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Eletrônica</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            color: black;
+            padding: 10px;
+        }
+        div#caixa {
+            position: relative;
+            background-image: url('imagens/urna.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: auto;
+            height: 300px;
+            width: 450px;
+        }
+        input.num {
+            width: 25px;
+            height: 15px;
+            color: transparent;
+            background-color: transparent;
+            border: 0px;
+            cursor: pointer;
+        }
+        input.botao {
+            color: transparent;
+            background-color: transparent;
+            border: 0px;
+            cursor: pointer;
+        }
+        input#b1{
+            position: absolute;
+            left: 72%;
+            bottom: 56%;
+            transform: translate(-50%,-50%);
+        }
+        input#b2{
+            position: absolute;
+            left: 76%;
+            bottom: 58%;
+        }
+        input#b3{
+            position: absolute;
+            left: 83%;
+            bottom: 58%;
+        }
+        input#b4{
+            position: absolute;
+            left: 69%;
+            bottom: 50%;
+        }
+        input#b5{
+            position: absolute;
+            left: 76%;
+            bottom: 50%;
+        }
+        input#b6{
+            position: absolute;
+            left: 83%;
+            bottom: 50%;
+        }
+        input#b7{
+            position: absolute;
+            left: 69%;
+            bottom: 41%;
+        }
+        input#b8{
+            position: absolute;
+            left: 76%;
+            bottom: 41%;
+        }
+        input#b9{
+            position: absolute;
+            left: 83%;
+            bottom: 41%;
+        }
+        input#b0{
+            position: absolute;
+            left: 77%;
+            bottom: 32%;
+        }
+        input#bcorrige{
+            position: absolute;
+            width: 38px;
+            height: 22px;
+            left: 75.5%;
+            bottom: 21%;
+        }
+        input#bbranco {
+            position: absolute;
+            width: 38px;
+            height: 22px;
+            left: 66%;
+            bottom: 21%;
+        }
+        input#bconfirma {
+            position: absolute;
+            width: 38px;
+            height: 26px;
+            left: 84.8%;
+            bottom: 21%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Escolha seu candidato: Vote!</h1>
+    <div id="caixa">
+        <input class="num" id="b1" type="button" value="1">
+        <input class="num" id="b2" type="button" value="2">
+        <input class="num" id="b3" type="button" value="3">
+        <input class="num" id="b4" type="button" value="4">
+        <input class="num" id="b5" type="button" value="5">
+        <input class="num" id="b6" type="button" value="6">
+        <input class="num" id="b7" type="button" value="7">
+        <input class="num" id="b8" type="button" value="8">
+        <input class="num" id="b9" type="button" value="9">
+        <input class="num" id="b0" type="button" value="0">
+        
+        <input class="botao" id="bcorrige" type="reset" value="corrige">
+        <input class="botao" id="bbranco" type="button" value="branco">
+        <input class="botao" id="bconfirma" type="submit" value="confirma">
+    </div>
+</body>
+</html>
