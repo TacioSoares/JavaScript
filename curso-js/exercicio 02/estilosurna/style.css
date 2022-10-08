@@ -82,23 +82,26 @@ div#preto {
     float: left;
     width: 30px;
     height: 20px;
-    margin-left: 10px;
+    margin-left: 15px;
     margin-top: 2px;
     background-color: black;
     border: 1px solid gray;
     border-radius: 5px;
     color: white;
     cursor: pointer;
+}#b0 {
+    margin-left: 60px;
 }
-.botao {
-    margin-left: 10px;
+#opcoes{
+    padding: 0px;
+    margin: 0px;
 }
 #bcorrige {
     padding: 5px;
     background-color: rgb(245, 27, 27);
     border-radius: 5px;
     border: 0px;
-    margin-top: 8px;
+    margin-top: 15px;
     cursor: pointer;
 }
 #bconfirma {
