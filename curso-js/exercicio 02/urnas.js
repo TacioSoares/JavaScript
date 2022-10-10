@@ -26,6 +26,7 @@ function digitando(n) {
             candidato.innerHTML +='Partido: PL'
             fotocandidato.style.display = 'block'
             var img = document.createElement('img')
+            img.setAttribute('id' , 'foto')
             img.setAttribute('src' , 'imagens/bozo.jpg')
             fotocandidato.appendChild(img)
         } else if (dig1 == 1 && dig2 ==3) {
@@ -34,6 +35,7 @@ function digitando(n) {
             candidato.innerHTML +='Partido: PT'
             fotocandidato.style.display = 'block'
             var img = document.createElement('img')
+            img.setAttribute('id' , 'foto')
             img.setAttribute('src' , 'imagens/lula.jpeg')
             fotocandidato.appendChild(img) 
         } else if (dig2 != 3 || dig2 != 2) {
@@ -50,19 +52,7 @@ function corrige() {
     campo2.innerHTML = ''
     campo2.style.padding = '15px'
     candidato.innerHTML = ''
-    fotocandidato.removeChild(img)
+    img = window.document.getElementById('foto')
+    img.parentNode.removeChild(img)
 }
-function confirma() {
-    if (dig1 == null || dig2 == null) {
-        window.alert('Você precisa digitar dois números')
-    } else if (dig1 == 2 && dig2 == 2) {
-        bolsonaro += 1
-        function finalização()
-    } else if (dig1 == 1 && dig2 == 3) {
-        lula += 1
-        function finalização()
-    } else {
-        nulo += 1
-        function finalização()
-    }
-}
+

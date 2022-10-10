@@ -93,6 +93,10 @@ div#preto {
 }#b0 {
     margin-left: 60px;
 }
+.botao {
+    font-size: 0.6em;
+    font-weight: bolder;
+}
 #opcoes{
     padding: 0px;
     margin: 0px;
