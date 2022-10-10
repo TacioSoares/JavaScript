@@ -129,9 +129,24 @@
         <input class="num" id="b9" type="button" value="9">
         <input class="num" id="b0" type="button" value="0">
         
-        <input class="botao" id="bcorrige" type="reset" value="corrige">
+        <input class="botao" id="bcorrige" type="reset" value="corrige" onclick="corrige()">
         <input class="botao" id="bbranco" type="button" value="branco">
-        <input class="botao" id="bconfirma" type="submit" value="confirma">
+        <input class="botao" id="bconfirma" type="submit" value="confirma" onclick="confirma()">
     </div>
+    <div id="corpo">
+
+    </div>
+    <script>
+        function confirma() {
+            var corpo = window.document.querySelector('#corpo')
+            var span = document.createElement(span)
+            corpo.appendChild(span)
+            span.innerHTML ='Bora Bahia'
+            span.style.padding ='10px'
+        }
+        function corrige() {
+            span.parentNode.removeChild(span)
+        }
+    </script>
 </body>
 </html>
