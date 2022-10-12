@@ -9,17 +9,9 @@ var bolsonaro = 0
 var nulo = 0
 var total = 0
 var res = window.document.querySelector('#res')
+var tela = window.document.querySelector('#tela')
 // Contabilização dos votos
-
-while (encerrar() == false) {
-    if (confirma() == 'lula') {
-        lula += 1
-    } else if (confirma() == 'bolsonaro') {
-        bolsonaro += 1
-    } else {
-        nulo += 1
-    }
-} 
+ 
 
 // Mostrando candidato na tela 
 
@@ -61,7 +53,7 @@ function digitando(n) {
     }     
 }
 
-// Limpando a tela 
+// corrigindo voto 
 
 function corrige() {
     dig1 = null
@@ -81,22 +73,38 @@ function confirma() {
     if (campo1.innerHTML == '' || campo2.innerHTML == '') {
         window.alert('Você ainda não votou!')
     } else {
-        var digito1 = Number(window.document.querySelector('#campo1').value)
-        var digito2 = Number(window.document.querySelector('#campo2').value)
-        if (digito1 == 1 && digito2 == 3) {
-            return 'lula'
-        } else if (digito1 == 2 && digito2 == 2) {
-            return 'bolsonaro'
+        if (dig1 == 1 && dig2 == 3) {
+            lula += 1
+        } else if (dig1 == 2 && dig2 == 2) {
+            bolsonaro += 1
         } else {
-            return 'nulo'
+            nulo += 1
         }
+        total += 1
+        tela.style.display = 'block'
+        setTimeout(function(){
+            tela.style.display ='none'
+            corrige()
+        },1500)
     }
-    total += 1
 }  
 
-// Encerrando a seção
+// votando em branco
 
-function encerrar() {
-    res.innerHTML = `O total de votos foram ${total} <br><br> O candidato Bolsonaro recebeu ${bolsonaro} votos. <br><br> O candidato Lula recebeu ${lula} votos. <br><br> Foram ${nulo} votos brancos ou nulos.`
-    return true
+function branco() {
+    nulo += 1
+    total += 1
+    tela.style.display = 'block'
+    setTimeout(function(){
+        tela.style.display ='none'
+        corrige()
+    },1500)
 }
+// Encerrando a seção
+function encerrar() {
+    if (total > 0) {
+        res.innerHTML = `O total de votos foram ${total} <br><br> O candidato Bolsonaro recebeu ${bolsonaro} votos. <br><br> O candidato Lula recebeu ${lula} votos. <br><br> Foram ${nulo} votos brancos ou nulos.`
+        res.style.padding ='15px'
+    }   
+}
+
