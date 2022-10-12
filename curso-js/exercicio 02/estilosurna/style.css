@@ -19,9 +19,9 @@ div#geral {
     margin: auto;
     background-color: white;
     display: flex;
-    padding: 20px;
-    height: 220px;
-    width: 500px;
+    padding: 10px;
+    height: 45vw;
+    width: 88vw;
     border-radius: 10px;
     border: 1px solid black;
 }
@@ -29,120 +29,130 @@ div#branco {
     display: inline-block;
     background-color: white;
     border: 1px solid black;
-    width: 400px;
+    width: 40vw;
     height: 300px;
 }
 #candidato {
-    width: 300px;
-    height: 200px;
+    width: 50vw;
+    height: 37vw;
     border: 1px solid black;
     border-radius: 5px;
     padding: 10px;
-    margin-right: 10px;
 }
 #candidato > h2 {
     text-align: center;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
+    font-size: 1em;
+    margin: 0px;
 }
 #candidato > p {
     display: inline;
+    margin: 0px;
 }
 #tela {
     display: none;
     position: absolute;
     background-color: white;
-    width: 300px;
-    height: 200px;
+    width: 50vw;
+    height: 35vw;
 }
 #fotopolitico {
     float: right;
-    display: inline-block;
-    padding: 5px;
-    padding-right: 15px;
 }
 #fotopolitico > img {
-    width: 100px;
+    width: 15vw;
 }
 #politico {
     float: left;
     display: inline-block;
     height: 100px;
     text-align: left;
-    font-size: 0.8em;
+    font-size: 0.6em;
     font-weight: bolder;
-    padding: 5px;
-    margin-top: 20px;
+    padding: 3px;
+    margin-top: 5px;
 }
 .numero {
-    padding: 14px;
+    display: inline-block;
     border: 1px solid black;
-    margin: 1px;
+    width: 6vw;
+    height: 8vw;
+    font-size: 0.9em;
+    text-align: center;
 }
 div#preto {
     display: block;
     position: relative;
     background-color: rgba(0, 0, 0, 0.856);
     border-radius: 10px;
-    padding: 10px;
-    padding-top: 30px;
+    padding: 2px;
+    padding-top: 8px;
     text-align: center;
+    width: 33vw;
+    margin-left: 5px;
 }
 .num {
     display: inline-block;
-    float: left;
-    width: 30px;
-    height: 20px;
-    margin-left: 15px;
-    margin-top: 2px;
+    width: 5vw;
+    height: 5vw;
     background-color: black;
     border: 1px solid gray;
     border-radius: 5px;
     color: white;
     cursor: pointer;
-}#b0 {
-    margin-left: 60px;
+    font-size: 0.7em;
+    margin: 2px 3px;
 }
 .botao {
     font-size: 0.6em;
     font-weight: bolder;
 }
 #opcoes{
+    display: inline-block;
     padding: 0px;
     margin: 0px;
 }
 #bcorrige {
+    float: left;
     padding: 5px;
     background-color: rgb(245, 27, 27);
     border-radius: 5px;
     border: 0px;
-    margin-top: 15px;
     cursor: pointer;
+    font-size: 0.45em;
+    margin-left: 1px;
+    margin-top: 5px;
+    width: 13.5vw;
 }
 #bconfirma {
     padding: 5px;
     background-color: green;
     border-radius: 5px;
     border: 0px;
-    margin-top: 8px;
+    margin-top: 2px;
     cursor: pointer;
-    height: 40px;
+    font-size: 0.5em;
 }
 #bbranco {
+    float: right;
     padding: 5px;
     background-color: white;
     border-radius: 5px;
     border: 0px;
-    margin-top: 8px;
     cursor: pointer;
+    font-size: 0.45em;
+    margin-top: 5px;
+    width: 13.5vw;
 }
 #configuracoes {
     margin: auto;
     margin-top: 20px;
     padding: 20px;
     background-image: linear-gradient(to bottom, rgb(110, 110, 110), rgb(185, 185, 185));
-    width: 400px;
+    width: 80vw;
     border-radius: 10px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.575);
+    font-size: 0.9em;
 }
 .negrito {
     font-weight: bolder;
@@ -157,14 +167,14 @@ div#preto {
     -webkit-appearance: none;
     margin-left: 10px;
     margin-right: 10px;
-    width: 100px;
+    width: 70px;
     height: 15px;
     border-radius: 10px;
     cursor: pointer; 
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.548);
 }
 #off {
-    margin-left: 108px;
+    margin-left: 85px;
 }
 #fim {
     display: block;
@@ -178,7 +188,7 @@ div#preto {
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.589);
 }
 #res {
-    width: 400px;
+    width: 80vw;
     margin-top: 10px;
     margin: auto;
     margin-top: 20px;

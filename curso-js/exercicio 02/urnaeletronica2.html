@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simulador de Urna Eletrônica</title>
-    <link rel="stylesheet" href="estilosurna/style.css">
+    <link rel="stylesheet" href="estilosurna/style.css" media="all">
+    <link rel="stylesheet" href="estilosurna/mediaquery.css">
     <link rel="shortcut icon" href="imagens/faviconurna.png" type="image/x-icon">
 </head>
 <body>
@@ -16,11 +17,9 @@
                 <div id="candidato">
                     <div id="tela"><h1>FIM</h1></div>
                     <h2>Presidente</h2>
-                    <p id="digefoto">
-                        <span class="numero" id="campo1"></span>
-                        <span class="numero" id="campo2"></span>
-                        <div id="fotopolitico"></div><br> 
-                    </p>
+                    <span class="numero" id="campo1"></span>
+                    <span class="numero" id="campo2"></span>
+                    <div id="fotopolitico"></div> 
                     <p>
                         <span id="politico"></span>
                     </p>
@@ -39,7 +38,7 @@
                 <input class="num" id="b0" type="button" value="0" onclick="digitando(0)">
                 <br>
 
-                <div id="opcoes"><br>
+                <div id="opcoes">
                     <input class="botao" id="bcorrige" type="reset" value="CORRIGE" onclick="corrige()">
                     <input class="botao" id="bbranco" type="button" value="BRANCO" onclick="branco()">
                     <input class="botao" id="bconfirma" type="submit" value="CONFIRMA" onclick="confirma()">

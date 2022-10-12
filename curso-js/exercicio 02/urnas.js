@@ -21,11 +21,9 @@ function digitando(n) {
     } else if (campo1.innerHTML == '') {
         dig1 = n
         campo1.innerHTML = dig1
-        campo1.style.padding ='14px 9.5px'
     } else {
         dig2 = n
-        campo2.innerHTML = dig2
-        campo2.style.padding = '14px 9.5px' 
+        campo2.innerHTML = dig2 
     }
     if (dig1 != null && dig2 !=null) {
         if (dig1 == 2 && dig2 ==2) {
@@ -48,7 +46,6 @@ function digitando(n) {
             fotocandidato.appendChild(img) 
         } else if (dig2 != 3 || dig2 != 2) {
             candidato.innerHTML ='Nulo'
-            candidato.style.padding = '20px'
         }
     }     
 }
@@ -59,9 +56,7 @@ function corrige() {
     dig1 = null
     dig2 = null
     campo1.innerHTML = ''
-    campo1.style.padding = '14px'
     campo2.innerHTML = ''
-    campo2.style.padding = '14px'
     candidato.innerHTML = ''
     img = window.document.getElementById('foto')
     img.parentNode.removeChild(img)

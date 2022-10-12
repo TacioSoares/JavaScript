@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 375px) and (max-width: 498px) {
+    div#geral {
+        padding: 15px;
+        height: 42vw;
+        width: 89vw;
+    }
+    #b1, #b2, #b3 {
+        margin-top: 12px;
+    }
+    .num {
+        width: 6vw;
+        height: 4.2vw;
+        font-size: 0.9em;
+    }
+    #candidato > h2 {
+        padding-bottom: 8px;
+        font-size: 1.3em;
+    }
+    #fotopolitico > img {
+        width: 18.3vw;
+    }
+    #politico {
+        font-size: 0.66em;
+    }
+    #bcorrige {
+        padding: 5px;
+        font-size: 0.6em;
+        margin-left: 4px;
+        width: 14vw;
+        margin-top: 2px;
+    }
+    #bconfirma {
+        padding: 5px;
+        background-color: green;
+        border-radius: 5px;
+        border: 0px;
+        margin-top: 3px;
+        cursor: pointer;
+        font-size: 0.7em;
+    }
+    #bbranco {
+        font-size: 0.6em;
+        width: 13vw;
+        margin-right: 2px;
+        margin-top: 2px;
+    }    
+}
