@@ -56,3 +56,4 @@ function corrige() {
     img.parentNode.removeChild(img)
 }
 
+
