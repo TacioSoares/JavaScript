@@ -7,6 +7,22 @@ var dig2 = null
 var lula = 0
 var bolsonaro = 0
 var nulo = 0
+var total = 0
+var res = window.document.querySelector('#res')
+// Contabilização dos votos
+
+while (encerrar() == false) {
+    if (confirma() == 'lula') {
+        lula += 1
+    } else if (confirma() == 'bolsonaro') {
+        bolsonaro += 1
+    } else {
+        nulo += 1
+    }
+} 
+
+// Mostrando candidato na tela 
+
 function digitando(n) {
     if (campo2.innerHTML != '' ) {
         return window.alert('Agora você precisa confirmar ou corrigir')
@@ -44,16 +60,42 @@ function digitando(n) {
         }
     }     
 }
+
+// Limpando a tela 
+
 function corrige() {
     dig1 = null
     dig2 = null
     campo1.innerHTML = ''
-    campo1.style.padding = '15px'
+    campo1.style.padding = '14px'
     campo2.innerHTML = ''
-    campo2.style.padding = '15px'
+    campo2.style.padding = '14px'
     candidato.innerHTML = ''
     img = window.document.getElementById('foto')
     img.parentNode.removeChild(img)
 }
 
+// confirmando o voto
 
+function confirma() {
+    if (campo1.innerHTML == '' || campo2.innerHTML == '') {
+        window.alert('Você ainda não votou!')
+    } else {
+        var digito1 = Number(window.document.querySelector('#campo1').value)
+        var digito2 = Number(window.document.querySelector('#campo2').value)
+        if (digito1 == 1 && digito2 == 3) {
+            return 'lula'
+        } else if (digito1 == 2 && digito2 == 2) {
+            return 'bolsonaro'
+        } else {
+            return 'nulo'
+        }
+    }
+    total += 1
+}  
+
+// Encerrando a seção
+
+function encerrar() {
+    res.innerHTML = `O total de votos foram ${total} <br><br> O candidato Bolsonaro recebeu ${bolsonaro} votos. <br><br> O candidato Lula recebeu ${lula} votos. <br><br> Foram ${nulo} votos brancos ou nulos.`
+}

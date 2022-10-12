@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Urna Eletrônica</title>
+    <title>Simulador de Urna Eletrônica</title>
     <link rel="stylesheet" href="estilosurna/style.css">
     <link rel="shortcut icon" href="imagens/faviconurna.png" type="image/x-icon">
 </head>
 <body>
-    <h1>Vote</h1>
+    <h1>Simule uma seção eleitoral</h1>
     <section>
         <div id="geral">
             <div>
@@ -46,6 +46,17 @@
             </div>
         </div>
     </section>
+    <div id="configuracoes">
+        <label for="fraude"  class="negrito">Ligar sistema malicioso:</label> <br><br> Pró <span id="lula" class="negrito">Lula</span><input type="range" name="fraude" id="fraude" max="3" min="1" value="2">Pró <span id="bolsonaro" class="negrito">Bolsonaro</span> <br>
+        <span id="off" class="negrito">OFF</span>
+    </div>
+    <input type="submit" value="ENCERRAR SEÇÃO" id="fim" onclick="encerrar()">
+    <div id="resultado">
+
+    </div>
+    <div id="res">
+
+    </div>
     <script src="urnas.js"></script>
 </body>
 </html>

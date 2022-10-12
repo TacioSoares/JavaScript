@@ -6,7 +6,7 @@
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: aquamarine;
+    background-image: linear-gradient(to right, rgb(74, 74, 245), lightblue);
     width: 100vw;
     height: 100vh;
 }
@@ -125,4 +125,56 @@ div#preto {
     border: 0px;
     margin-top: 8px;
     cursor: pointer;
+}
+#configuracoes {
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    background-image: linear-gradient(to bottom, rgb(110, 110, 110), rgb(185, 185, 185));
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.575);
+}
+.negrito {
+    font-weight: bolder;
+}
+#lula {
+    color: rgb(221, 4, 4);
+}
+#bolsonaro {
+    color: rgb(255, 255, 0);
+}
+#fraude {
+    -webkit-appearance: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100px;
+    height: 15px;
+    border-radius: 10px;
+    cursor: pointer; 
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.548);
+}
+#off {
+    margin-left: 108px;
+}
+#fim {
+    display: block;
+    padding: 3px;
+    font-weight: bolder;
+    margin: auto;
+    margin-top: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.616);
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.589);
+}
+#res {
+    width: 400px;
+    margin-top: 10px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
 }
