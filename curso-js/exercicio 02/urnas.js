@@ -62,7 +62,6 @@ function corrige() {
     candidato.innerHTML = ''
     img = window.document.getElementById('foto')
     img.parentNode.removeChild(img)
-    fotocandidato.style.padding = '20vw'
 }
 
 // confirmando o voto

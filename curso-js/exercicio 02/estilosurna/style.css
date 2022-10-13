@@ -58,15 +58,18 @@ div#branco {
 }
 #fotopolitico {
     float: right;
-    padding: 20vw;
+    height: 100px;
+    width: 80px;
 }
 #fotopolitico > img {
+    float: right;
     width: 15vw;
 }
 #politico {
     display: inline-block;
     float: left;
     height: 100px;
+    width: 80px;
     text-align: left;
     font-size: 0.6em;
     font-weight: bolder;
