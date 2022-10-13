@@ -47,3 +47,111 @@
         margin-top: 2px;
     }    
 }
+@media screen and (min-width: 498px) and (max-width: 600px) {
+    div#geral {
+        padding: 15px;
+        height: 39vw;
+    }
+    #candidato {
+        height: 34vw;
+        width: 54vw;
+    }
+    #candidato > h2 {
+        font-size: 1.4em;
+    }
+    #fotopolitico > img {
+        width: 20vw;
+    }
+    #politico {
+        font-size: 0.74em;
+    }
+    .numero {
+        font-size: 2em;
+    }
+    #bcorrige {
+        font-size: 0.6em;
+        margin-left: 8px;
+        width: 12vw;
+    }
+    #bbranco {
+        font-size: 0.6em;
+        margin-right: 8px;
+        width: 12vw;
+    }
+    #bconfirma {
+        font-size: 0.75em;
+        margin-top: 4px;
+    }
+    .num {
+        width: 5vw;
+        height: 4vw;
+        font-size: 0.8em;
+    }
+    #b1, #b2, #b3 {
+        margin-top: 18px;
+    }
+    #configuracoes {
+        width: 300px;
+    }
+}
+@media screen and (min-width: 601px) {
+    div#geral {
+        padding: 15px;
+        height: 220px;
+        width: 540px;
+    }
+    #candidato {
+        height: 192px;
+        width: 340px;
+    }
+    #candidato > h2 {
+        font-size: 1.6em;
+    }
+    #fotopolitico {
+        padding: 150px;
+    }
+    #fotopolitico > img {
+        width: 115px;
+    }
+    #politico {
+        margin-top: 10px;
+        font-size: 0.9em;
+    }
+    .numero {
+        width: 35px;
+        height: 50px;
+        font-size: 2.5em;
+    }
+    #bcorrige {
+        font-size: 0.7em;
+        margin-left: 12px;
+        width: 70px;
+        margin-top: 30px;
+    }
+    #bbranco {
+        font-size: 0.7em;
+        margin-right: 12px;
+        width: 70px;
+        margin-top: 30px;
+    }
+    #bconfirma {
+        font-size: 0.8em;
+        margin-top: 6px;
+        width: 80px;
+    }
+    .num {
+        width: 25px;
+        height: 18px;
+        font-size: 0.8em;
+    }
+    #b1, #b2, #b3 {
+        margin-top: 23px;
+    }
+    #configuracoes {
+        width: 300px;
+    }
+    #tela {
+        height: 192px;
+        width: 340px;
+    }
+}

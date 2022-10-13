@@ -31,6 +31,7 @@ function digitando(n) {
             candidato.innerHTML +='Vice: Braga Netto<br><br>'
             candidato.innerHTML +='Partido: PL'
             fotocandidato.style.display = 'block'
+            fotocandidato.style.padding = '0px'
             var img = document.createElement('img')
             img.setAttribute('id' , 'foto')
             img.setAttribute('src' , 'imagens/bozo.jpg')
@@ -40,6 +41,7 @@ function digitando(n) {
             candidato.innerHTML +='Vice: Geraldo Alckmin<br><br>'
             candidato.innerHTML +='Partido: PT'
             fotocandidato.style.display = 'block'
+            fotocandidato.style.padding = '0px'
             var img = document.createElement('img')
             img.setAttribute('id' , 'foto')
             img.setAttribute('src' , 'imagens/lula.jpeg')
@@ -60,6 +62,7 @@ function corrige() {
     candidato.innerHTML = ''
     img = window.document.getElementById('foto')
     img.parentNode.removeChild(img)
+    fotocandidato.style.padding = '20vw'
 }
 
 // confirmando o voto
@@ -98,6 +101,7 @@ function branco() {
 // Encerrando a seção
 function encerrar() {
     if (total > 0) {
+        res.style.display = 'block'
         res.innerHTML = `O total de votos foram ${total} <br><br> O candidato Bolsonaro recebeu ${bolsonaro} votos. <br><br> O candidato Lula recebeu ${lula} votos. <br><br> Foram ${nulo} votos brancos ou nulos.`
         res.style.padding ='15px'
     }   
