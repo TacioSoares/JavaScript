@@ -10,8 +10,7 @@ var nulo = 0
 var total = 0
 var res = window.document.querySelector('#res')
 var tela = window.document.querySelector('#tela')
-// Contabilização dos votos
- 
+
 
 // Mostrando candidato na tela 
 
@@ -72,8 +71,10 @@ function confirma() {
     } else {
         if (dig1 == 1 && dig2 == 3) {
             lula += 1
+            roubo()
         } else if (dig1 == 2 && dig2 == 2) {
             bolsonaro += 1
+            roubo()
         } else {
             nulo += 1
         }
@@ -97,12 +98,38 @@ function branco() {
         corrige()
     },1500)
 }
+
+// Fraudando a seção
+
+function roubo() {
+    var golpe = document.querySelector('#fraude').value
+    if (golpe == 1) {
+        if (total % 3 == 2) {
+            lula += 1
+            bolsonaro -= 1
+        }    
+    } else if (golpe == 3) {
+        if (total % 3 == 2) {
+            bolsonaro += 1
+            lula -= 1
+        }
+    } 
+}  
 // Encerrando a seção
+
 function encerrar() {
     if (total > 0) {
         res.style.display = 'block'
-        res.innerHTML = `O total de votos foram ${total} <br><br> O candidato Bolsonaro recebeu ${bolsonaro} votos. <br><br> O candidato Lula recebeu ${lula} votos. <br><br> Foram ${nulo} votos brancos ou nulos.`
-        res.style.padding ='15px'
+        res.innerHTML = `O total de votos foram ${total} <br><br> O candidato Bolsonaro recebeu ${bolsonaro} votos. <br><br> O candidato Lula recebeu ${lula} votos. <br><br> Foram ${nulo} votos brancos ou nulos.<br><br>`
+        res.style.padding ='10px'
+        if (lula > bolsonaro) {
+            var vencedor = 'O vencedor dessa seção foi o <strong>Lula</strong>.'
+        } else if (bolsonaro > lula) {
+            var vencedor = 'O vencedor dessa seção foi o <strong>Bolsonaro</strong>.'
+        } else {
+            var vencedor = 'Nessa seção houve um <strong>empate</strong>.'
+        }
+        res.innerHTML += `${vencedor}`
     }   
 }
 
