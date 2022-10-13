@@ -69,8 +69,8 @@ div#branco {
     text-align: left;
     font-size: 0.6em;
     font-weight: bolder;
-    padding: 3px;
-    margin-top: 5px;
+    padding: 5px;
+    margin-top: 15px;
 }
 .numero {
     display: inline-block;
@@ -90,6 +90,9 @@ div#preto {
     text-align: center;
     width: 33vw;
     margin-left: 5px;
+}
+p#campos {
+    display: block;
 }
 .num {
     display: inline-block;
