@@ -130,6 +130,6 @@ function encerrar() {
             var vencedor = 'Nessa seção houve um <strong>empate</strong>.'
         }
         res.innerHTML += `${vencedor}`
-    }   
+    } res.scrollIntoView()   
 }
 
