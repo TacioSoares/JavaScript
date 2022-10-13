@@ -80,10 +80,9 @@ function confirma() {
         }
         total += 1
         tela.style.display = 'block'
-        corrige()
         setTimeout(function(){
             tela.style.display ='none'
-            
+            corrige()
         },1500)
     }
 }  

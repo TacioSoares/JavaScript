@@ -66,6 +66,11 @@
         width: 54vw;
         transition-duration: 1s;
     }
+    #tela {
+        height: 34vw;
+        width: 54vw;
+        padding: 2px;
+    }
     #candidato > h2 {
         font-size: 1.4em;
         transition-duration: 1s;
