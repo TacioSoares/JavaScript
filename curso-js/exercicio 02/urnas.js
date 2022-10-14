@@ -124,10 +124,13 @@ function encerrar() {
         res.style.padding ='10px'
         if (lula > bolsonaro) {
             var vencedor = 'O vencedor dessa seção foi o <strong>Lula</strong>.'
+            document.body.style.backgroundImage = 'linear-gradient(to right, darkred, red'
         } else if (bolsonaro > lula) {
             var vencedor = 'O vencedor dessa seção foi o <strong>Bolsonaro</strong>.'
+            document.body.style.backgroundImage = 'linear-gradient(to right, rgb(153, 153, 3), rgba(255, 255, 0, 0.822)'
         } else {
             var vencedor = 'Nessa seção houve um <strong>empate</strong>.'
+            document.body.style.backgroundImage = 'linear-gradient(to right, black, gray)'
         }
         res.innerHTML += `${vencedor}`
     } res.scrollIntoView()   
