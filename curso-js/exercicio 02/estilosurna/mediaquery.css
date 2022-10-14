@@ -5,7 +5,6 @@
         padding: 15px;
         height: 42vw;
         width: 89vw;
-        transition-duration: 1s;
     }
     #b1, #b2, #b3 {
         margin-top: 12px;
@@ -14,20 +13,16 @@
         width: 6vw;
         height: 4.2vw;
         font-size: 0.9em;
-        transition-duration: 1s;
     }
     #candidato > h2 {
         padding-bottom: 8px;
         font-size: 1.3em;
-        transition-duration: 1s;
     }
     #fotopolitico > img {
         width: 18.3vw;
-        transition-duration: 1s;
     }
     #politico {
         font-size: 0.66em;
-        transition-duration: 1s;
         width: 107px;
     }
     #bcorrige {
@@ -36,7 +31,6 @@
         margin-left: 4px;
         width: 14vw;
         margin-top: 2px;
-        transition-duration: 1s;
     }
     #bconfirma {
         padding: 5px;
@@ -46,26 +40,22 @@
         margin-top: 3px;
         cursor: pointer;
         font-size: 0.7em;
-        transition-duration: 1s;
     }
     #bbranco {
         font-size: 0.6em;
         width: 13vw;
         margin-right: 2px;
         margin-top: 2px;
-        transition-duration: 1s;
     }    
 }
 @media screen and (min-width: 498px) and (max-width: 600px) {
     div#geral {
         padding: 15px;
         height: 39vw;
-        transition-duration: 1s;
     }
     #candidato {
         height: 34vw;
         width: 54vw;
-        transition-duration: 1s;
     }
     #tela {
         height: 34vw;
@@ -74,47 +64,38 @@
     }
     #candidato > h2 {
         font-size: 1.4em;
-        transition-duration: 1s;
     }
     #fotopolitico > img {
         width: 20vw;
-        transition-duration: 1s;
     }
     #politico {
         font-size: 0.74em;
-        transition-duration: 1s;
         width: 168px;
     }
     .numero {
         font-size: 2em;
-        transition-duration: 1s;
     }
     #bcorrige {
         font-size: 0.6em;
         margin-left: 8px;
         width: 12vw;
-        transition-duration: 1s;
     }
     #bbranco {
         font-size: 0.6em;
         margin-right: 8px;
         width: 12vw;
-        transition-duration: 1s;
     }
     #bconfirma {
         font-size: 0.75em;
         margin-top: 4px;
-        transition-duration: 1s;
     }
     .num {
         width: 5vw;
         height: 4vw;
         font-size: 0.8em;
-        transition-duration: 1s;
     }
     #b1, #b2, #b3 {
         margin-top: 18px;
-        transition-duration: 1s;
     }
     #configuracoes {
         width: 300px;
@@ -126,7 +107,6 @@
         padding: 15px;
         height: 220px;
         width: 540px;
-        transition-duration: 1s;
     }
     #candidato {
         height: 192px;
@@ -138,7 +118,6 @@
     }
     #candidato > h2 {
         font-size: 1.6em;
-        transition-duration: 1s;
     }
     #fotopolitico > img {
         width: 115px;
@@ -152,37 +131,31 @@
         width: 35px;
         height: 50px;
         font-size: 2.5em;
-        transition-duration: 1s;
     }
     #bcorrige {
         font-size: 0.7em;
         margin-left: 12px;
         width: 70px;
         margin-top: 30px;
-        transition-duration: 1s;
     }
     #bbranco {
         font-size: 0.7em;
         margin-right: 12px;
         width: 70px;
         margin-top: 30px;
-        transition-duration: 1s;
     }
     #bconfirma {
         font-size: 0.8em;
         margin-top: 6px;
         width: 80px;
-        transition-duration: 1s;
     }
     .num {
         width: 25px;
         height: 18px;
         font-size: 0.8em;
-        transition-duration: 1s;
     }
     #b1, #b2, #b3 {
         margin-top: 23px;
-        transition-duration: 1s;
     }
     #configuracoes {
         width: 300px;
