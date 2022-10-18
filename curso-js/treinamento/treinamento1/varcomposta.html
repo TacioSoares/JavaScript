@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <input type="button" value="Embaralhar Questões" onclick="embaralha()">
+    <section>
+        <span>
+            Questão 01
+        </span>
+        <div id="um" class="questoes">
+            
+            <div class="sumir" id="quest01">
+               
+            </div>
+        </div>
+        <span>
+            Questão 02
+        </span>
+        <div id="dois">
+            
+            <div class="sumir" id="quest02">
+              
+            </div>
+        </div>
+        <span>
+            Questão 03
+        </span>
+        <div id="tres">
+            
+            <div class="sumir" id="quest03">
+               
+            </div>
+        </div>
+        <span>
+            Questão 04
+        </span>
+        <div id="quatro">
+            <div class="sumir" id="quest04">
+                <h4>
+                    O tipo de aterramento utilizado para o Sistema de Energia Elétrica é o mesmo para o Sistema de iluminação? Explique
+                </h4>
+                <input type="button" value="Ver resposta" onclick="resposta(24)">
+                <div id="res24" class="res">
+                    Não! <br> 
+                    Um é do tipo TT e outro do tipo TNS. <br>
+                    O TT é mais eficiente, porém é mais caro. Por isso não são ambos do tipo TT.
+                    <span class="seta" onclick="apagar(24)">^</span>
+                </div>
+            </div>
+        </div>
+        <span>
+            Questão 05
+        </span>
+        <div id="cinco">
+            
+            <div class="sumir" class="questoes">
+               
+            </div>
+        </div>
+        <script src="logica/questoes.js"></script>
+    </section>
+</body>
+</html>
