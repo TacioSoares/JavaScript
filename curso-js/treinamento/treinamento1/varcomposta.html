@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-    <input type="button" value="Embaralhar Questões" onclick="embaralha()">
+    <input type="button" value="Embaralhar Questões" onclick="embaralha(questao)">
     <section>
         <span>
             Questão 01
@@ -16,7 +16,14 @@
         <div id="um" class="questoes">
             
             <div class="sumir" id="quest01">
-               
+                <h4>
+                    Qual a função do Sistema de Tratamento da Água de Alimentação (STAA)? 
+                </h4>
+                <input type="button" value="Ver resposta" onclick="resposta(01)">
+                <div id="res1" class="res">
+                    Fornecer água tratada aos sistemas do Reator IPEN/MB-01.
+                    <span class="seta" onclick="apagar(1)">^</span>
+                </div>
             </div>
         </div>
         <span>
@@ -25,7 +32,19 @@
         <div id="dois">
             
             <div class="sumir" id="quest02">
-              
+                <h4>
+                    Quem são os consumidores do Sistema de Tratamento de Água de Alimentação (STAA)?
+                </h4>
+                <input type="button" value="Ver resposta" onclick="resposta(2)">
+                <div id="res2" class="res">
+                    <ul>
+                        <li>Tanque de Estocagem (TQ-202)</li>
+                        <li>Sistema de Lavagem de Equipamentos (SLE)</li>
+                        <li>Sistema de Água Gelada (SAG)</li>
+                        <li>Sistema de Dosagem de Boro (SDB)</li>
+                    </ul>
+                    <span class="seta" onclick="apagar(2)">^</span>
+                </div>
             </div>
         </div>
         <span>
@@ -34,6 +53,10 @@
         <div id="tres">
             
             <div class="sumir" id="quest03">
+               <h4>
+                    Faça um desenho esquemático do STAA
+               </h4>
+               <input type="button" value="Ver resposta" onclick="resposta(3)">
                
             </div>
         </div>
